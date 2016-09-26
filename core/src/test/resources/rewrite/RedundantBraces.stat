@@ -8,7 +8,8 @@ object a {
 }
 >>>
 object a {
-  def x(i: Int): Int = 2
+  def x(i: Int): Int =
+    2
 }
 <<< respect max lines
 object a {
@@ -35,6 +36,19 @@ object a {
 >>>
 object a {
   def x(i: Int): Int = // comment
+    2
+}
+<<< has comment 2
+object a {
+  def x(i: Int): Int = {
+    // comment
+    2
+  }
+}
+>>>
+object a {
+  def x(i: Int): Int =
+    // comment
     2
 }
 <<< multiple stats
